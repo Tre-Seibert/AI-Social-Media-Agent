@@ -16,7 +16,8 @@ COMPANY_CONFIG = {
         "Small businesses in Philadelphia", "Blue collar businesses, like, plumbers, electricians, and HVAC technicians.",
         "Professional services", "Startups and entrepreneurs", "Non-profit organizations"
     ],
-    "brand_voice": "Professional yet approachable, creative, community-focused, tech-savvy but human, philly based"
+    "brand_voice": "Professional yet approachable, creative, community-focused, tech-savvy but human, philly based",
+    "content_guidelines": "IMPORTANT: Do not mention having a local office, physical workspace, or in-person meetings. We are a fully remote company serving the Philadelphia area. Focus on digital services, online collaboration, and virtual support for local businesses."
 }
 
 # Data directory configuration
@@ -37,7 +38,7 @@ POST_TYPE_CONFIGS = {
         "hashtags": ["#DigitalMarketing", "#WebDesign", "#IndustryInsights", "#TechTrends"]
     },
     "behind_the_scenes": {
-        "description": "Show the human side of web design - share something about the team, process, or workspace.",
+        "description": "Show the human side of web design - share something about the team, creative process, or digital workspace. Focus on collaboration, creativity, and the digital tools we use.",
         "image_prompt": "Flat design vector illustration in Canva style showing a creative workspace or team collaboration. Bold text overlay, simple icons, pastel background, clean and modern. Use #FECE87 and black as primary colors.",
         "hashtags": ["#BehindTheScenes", "#WebDesign", "#TeamWork", "#CreativeProcess"]
     },

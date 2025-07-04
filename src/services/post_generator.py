@@ -56,9 +56,9 @@ class PostGenerator:
                 post_manager.add_post(post)
                 return post
         
-        # If not a holiday, check if today is Monday for blog promotion
+        # If not a holiday, check if today is Sunday for blog promotion
         today = datetime.now()
-        if today.weekday() == 6:  # Monday is 0
+        if today.weekday() == 6:  # Sunday is 6
             try:
                 # Fetch the latest blog post from Strapi
                 url = 'http://127.0.0.1:1337/api/posts?populate=featuredImage&sort=publishedDate:desc&pagination[limit]=1&publicationState=live'
@@ -126,8 +126,16 @@ class PostGenerator:
         # If not a holiday and not Monday, generate regular post
         attempts = 0
         
+        # Create a filtered list of post types, excluding blog_promotion for non-Monday posts
+        # Blog promotion posts should only be generated on Mondays when there's a new blog post
+        available_post_types = [pt for pt in POST_CATEGORIES if pt != 'blog_promotion']
+        
+        # Ensure we have at least one post type available
+        if not available_post_types:
+            available_post_types = ['web_design_tip']  # Fallback to a safe default
+        
         while attempts < MAX_POST_GENERATION_ATTEMPTS:
-            post_type = random.choice(POST_CATEGORIES)
+            post_type = random.choice(available_post_types)
             post = self.generate_post_content(post_type)
             
             # Check if this content is too similar to recent posts
@@ -152,7 +160,7 @@ class PostGenerator:
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are an expert social media manager for Fishtown Web Design. Generate ONE SINGLE engaging, authentic post that showcases web design expertise while being helpful to the local Philadelphia business community. Keep the post under 200 words and include relevant emojis. IMPORTANT: Generate only ONE post, not multiple numbered posts. Do not use numbers like '1)', '2)', '3)' in your response."
+                        "content": "You are an expert social media manager for Fishtown Web Design. Generate ONE SINGLE engaging, authentic post that showcases web design expertise while being helpful to the local Philadelphia business community. Keep the post under 200 words and include relevant emojis. IMPORTANT: Generate only ONE post, not multiple numbered posts. Do not use numbers like '1)', '2)', '3)' in your response. Do not mention having a local office, physical workspace, or in-person meetings - we are a fully remote company serving the Philadelphia area."
                     },
                     {
                         "role": "user",
@@ -216,6 +224,7 @@ class PostGenerator:
         Services: {', '.join(COMPANY_CONFIG['services'])}
         Target Audience: {', '.join(COMPANY_CONFIG['target_audience'])}
         Brand Voice: {COMPANY_CONFIG['brand_voice']}
+        Content Guidelines: {COMPANY_CONFIG['content_guidelines']}
         
         Generate a {post_type.replace('_', ' ')} post that is engaging, authentic, and relevant to local Philadelphia businesses.
         """
@@ -240,7 +249,7 @@ class PostGenerator:
                 messages=[
                     {
                         "role": "system",
-                        "content": f"You are an expert social media manager for Fishtown Web Design. Today is {holiday_name}. Generate ONE SINGLE engaging, authentic holiday post that celebrates {holiday_name} while being relevant to web design and local Philadelphia businesses. Keep the post under 200 words and include relevant emojis. IMPORTANT: Generate only ONE post, not multiple numbered posts. Do not use numbers like '1)', '2)', '3)' in your response."
+                        "content": f"You are an expert social media manager for Fishtown Web Design. Today is {holiday_name}. Generate ONE SINGLE engaging, authentic holiday post that celebrates {holiday_name} while being relevant to web design and local Philadelphia businesses. Keep the post under 200 words and include relevant emojis. IMPORTANT: Generate only ONE post, not multiple numbered posts. Do not use numbers like '1)', '2)', '3)' in your response. Do not mention having a local office, physical workspace, or in-person meetings - we are a fully remote company serving the Philadelphia area."
                     },
                     {
                         "role": "user",
@@ -305,6 +314,7 @@ class PostGenerator:
         Services: {', '.join(COMPANY_CONFIG['services'])}
         Target Audience: {', '.join(COMPANY_CONFIG['target_audience'])}
         Brand Voice: {COMPANY_CONFIG['brand_voice']}
+        Content Guidelines: {COMPANY_CONFIG['content_guidelines']}
         
         Today is {holiday_name}. Generate a holiday-themed post that celebrates this special day while being relevant to web design and local Philadelphia businesses.
         """
@@ -338,7 +348,7 @@ class PostGenerator:
             response = self.client.chat.completions.create(
                 model="gpt-4",
                 messages=[
-                    {"role": "system", "content": "You are an expert social media manager for Fishtown Web Design."},
+                    {"role": "system", "content": "You are an expert social media manager for Fishtown Web Design. Do not mention having a local office, physical workspace, or in-person meetings - we are a fully remote company serving the Philadelphia area."},
                     {"role": "user", "content": prompt}
                 ],
                 max_tokens=200,

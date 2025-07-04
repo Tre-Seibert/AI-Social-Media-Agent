@@ -88,7 +88,7 @@ class ImageGenerator:
             return None
     
     def generate_image(self, post_content: str, post_type: str, holiday_info: Dict[str, Any] | None = None) -> Optional[str]:
-        """Generate an image using GPT-4o enhanced prompts with DALL-E 3."""
+        """Generate an image using DALL-E 3 with base prompts."""
         try:
             # First check if we already have an image for similar content
             existing_image = self.check_existing_images(post_type, post_content)
@@ -96,17 +96,17 @@ class ImageGenerator:
                 print(f"🔄 Using existing image: {existing_image}")
                 return existing_image
             
-            # First, use GPT-4o to enhance the image prompt
-            enhanced_prompt = self.enhance_image_prompt_with_gpt4o(post_content, post_type, holiday_info)
+            # Generate the base image prompt
+            base_prompt = self.generate_image_prompt(post_content, post_type, holiday_info)
             
             print(f"🎨 Generating image for post type: {post_type}")
-            print(f"📝 Enhanced image prompt: {enhanced_prompt}")
+            print(f"📝 Image prompt: {base_prompt}")
             print(f"📄 Post content preview: {post_content[:100]}...")
             
-            # Use DALL-E 3 with the enhanced prompt
+            # Use DALL-E 3 with the base prompt
             response = self.client.images.generate(
                 model="dall-e-3",
-                prompt=enhanced_prompt,
+                prompt=base_prompt,
                 size=IMAGE_SETTINGS["size"],
                 quality=IMAGE_SETTINGS["quality"],
                 n=1,
@@ -120,7 +120,7 @@ class ImageGenerator:
                 if image_url:
                     image_filename = self.download_and_save_image(image_url, post_type)
                     
-                    print(f"✅ Image generated successfully with GPT-4o enhanced prompt: {image_filename}")
+                    print(f"✅ Image generated successfully: {image_filename}")
                     return image_filename
                 else:
                     print("❌ No image URL received from DALL-E 3")
@@ -131,92 +131,6 @@ class ImageGenerator:
                 
         except Exception as e:
             print(f"❌ Error generating image: {e}")
-            print("🔄 Falling back to basic prompt...")
-            return self.generate_image_fallback(post_content, post_type)
-    
-    def enhance_image_prompt_with_gpt4o(self, post_content: str, post_type: str, holiday_info: Dict[str, Any] | None = None) -> str:
-        """Use GPT-4o to enhance the image prompt for better results."""
-        try:
-            base_prompt = self.generate_image_prompt(post_content, post_type, holiday_info)
-            
-            enhancement_prompt = f"""
-            You are an expert at creating image generation prompts. Take this base prompt and enhance it to be more specific, detailed, and effective for DALL-E 3 image generation.
-            
-            Base prompt: {base_prompt}
-            
-            Enhance this prompt to be:
-            1. More specific and detailed
-            2. Better suited for DALL-E 3
-            3. More likely to produce a professional, high-quality image
-            4. Optimized for social media (Instagram/Facebook)
-            
-            Return only the enhanced prompt, nothing else.
-            """
-            
-            response = self.client.chat.completions.create(
-                model="gpt-4o",
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are an expert at creating image generation prompts for DALL-E 3. Provide clear, detailed, and effective prompts that will generate high-quality images."
-                    },
-                    {
-                        "role": "user",
-                        "content": enhancement_prompt
-                    }
-                ],
-                max_tokens=IMAGE_SETTINGS["max_tokens"],
-                temperature=IMAGE_SETTINGS["temperature"]
-            )
-            
-            if (response and response.choices and 
-                len(response.choices) > 0 and 
-                response.choices[0].message and 
-                response.choices[0].message.content):
-                
-                enhanced_prompt = response.choices[0].message.content.strip()
-                print(f"✨ GPT-4o enhanced the prompt for better image generation")
-                return enhanced_prompt
-            else:
-                print("⚠️  GPT-4o enhancement failed, using base prompt")
-                return base_prompt
-                
-        except Exception as e:
-            print(f"⚠️  Error enhancing prompt with GPT-4o: {e}")
-            return self.generate_image_prompt(post_content, post_type, holiday_info)
-    
-    def generate_image_fallback(self, post_content: str, post_type: str) -> Optional[str]:
-        """Fallback image generation using basic prompt."""
-        try:
-            print(f"🎨 Generating image with fallback method for post type: {post_type}")
-            
-            basic_prompt = self.generate_image_prompt(post_content, post_type)
-            
-            response = self.client.images.generate(
-                model="dall-e-3",
-                prompt=basic_prompt,
-                size=IMAGE_SETTINGS["size"],
-                quality=IMAGE_SETTINGS["quality"],
-                n=1,
-                style=IMAGE_SETTINGS["style"]
-            )
-            
-            if response and response.data:
-                image_url = response.data[0].url
-                
-                if image_url:
-                    image_filename = self.download_and_save_image(image_url, post_type)
-                    print(f"✅ Image generated successfully with fallback: {image_filename}")
-                    return image_filename
-                else:
-                    print("❌ No image URL received from fallback")
-                    return None
-            else:
-                print("❌ No image data received from fallback")
-                return None
-                
-        except Exception as e:
-            print(f"❌ Error in fallback image generation: {e}")
             return None
     
     def download_and_save_image(self, image_url: str, post_type: str) -> Optional[str]:
