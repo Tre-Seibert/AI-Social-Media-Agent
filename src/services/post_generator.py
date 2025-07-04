@@ -13,6 +13,25 @@ from ..core.config import (
 )
 import requests
 
+def extract_text_from_blocks(blocks, max_length=400):
+    texts = []
+    for block in blocks:
+        # Paragraphs and headings
+        if block.get('type') in ('paragraph', 'heading'):
+            for child in block.get('children', []):
+                if isinstance(child, dict) and 'text' in child:
+                    texts.append(child['text'])
+        # Optionally handle lists
+        elif block.get('type') == 'list':
+            for item in block.get('children', []):
+                if isinstance(item, dict) and 'children' in item:
+                    for child in item['children']:
+                        if isinstance(child, dict) and 'text' in child:
+                            texts.append(child['text'])
+    summary = ' '.join(texts).strip()
+    if len(summary) > max_length:
+        summary = summary[:max_length].rsplit(' ', 1)[0] + '...'
+    return summary
 
 class PostGenerator:
     """Generates social media posts using OpenAI API."""
@@ -39,7 +58,7 @@ class PostGenerator:
         
         # If not a holiday, check if today is Monday for blog promotion
         today = datetime.now()
-        if today.weekday() == 4:  # Monday is 0
+        if today.weekday() == 6:  # Monday is 0
             try:
                 # Fetch the latest blog post from Strapi
                 url = 'http://127.0.0.1:1337/api/posts?populate=featuredImage&sort=publishedDate:desc&pagination[limit]=1&publicationState=live'
@@ -48,8 +67,25 @@ class PostGenerator:
                 posts = data.get('data', [])
                 if posts:
                     post_data = posts[0]
+                    print('DEBUG: post_data from Strapi:', post_data)
                     title = post_data.get('title', 'Our Latest Blog Post')
-                    summary = post_data.get('summary') or post_data.get('content', '')[:180] + '...'
+                    summary = post_data.get('summary')
+                    print('DEBUG: summary type:', type(summary), 'value:', summary)
+                    if not summary:
+                        content = post_data.get('content', '')
+                        print('DEBUG: content type:', type(content), 'value:', content)
+                        if isinstance(content, list):
+                            blog_text = extract_text_from_blocks(content, max_length=1200)
+                            print('DEBUG: extracted blog_text:', blog_text)
+                        else:
+                            blog_text = str(content)[:1200]
+                        # Use AI to generate the caption
+                        ai_caption = self.generate_blog_caption_with_ai(title, blog_text, max_length=400)
+                        if ai_caption:
+                            summary = ai_caption
+                        else:
+                            summary = blog_text[:400] + '...'
+                        print('DEBUG: computed summary:', summary)
                     slug = post_data.get('slug', '')
                     link = f"https://fishtownwebdesign.com/blog/{slug}" if slug else "https://fishtownwebdesign.com/blog"
                     # Get featured image
@@ -287,4 +323,38 @@ class PostGenerator:
             "full_post": f"{content}\n\n{' '.join(hashtags)}",
             "generated_at": datetime.now().isoformat(),
             "id": f"fallback_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        } 
+        }
+    
+    def generate_blog_caption_with_ai(self, blog_title: str, blog_text: str, max_length: int = 400) -> str:
+        """Generate a catchy, engaging social media caption for a blog post using OpenAI."""
+        prompt = (
+            f"Write a catchy, engaging social media caption (max {max_length} characters) for the following blog post, targeting small business owners in Philadelphia. "
+            f"Make it enticing to click, summarize the value, and include a call to action.\n\n"
+            f"Blog title: {blog_title}\n"
+            f"Blog content: {blog_text}\n"
+            f"Caption:"
+        )
+        try:
+            response = self.client.chat.completions.create(
+                model="gpt-4",
+                messages=[
+                    {"role": "system", "content": "You are an expert social media manager for Fishtown Web Design."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_tokens=200,
+                temperature=0.7
+            )
+            if (response and response.choices and len(response.choices) > 0 and response.choices[0].message and response.choices[0].message.content):
+                caption = response.choices[0].message.content.strip()
+                # Remove leading/trailing quotes (single or double)
+                caption = caption.strip().strip('"').strip("'")
+                # Truncate if needed
+                if len(caption) > max_length:
+                    caption = caption[:max_length].rsplit(' ', 1)[0] + '...'
+                return caption
+            else:
+                print("Warning: Empty response from OpenAI API for blog caption")
+                return None
+        except Exception as e:
+            print(f"Error generating blog caption with OpenAI: {e}")
+            return None 
