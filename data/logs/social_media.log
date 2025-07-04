@@ -1,0 +1,295 @@
+2025-06-25 20:38:02,971 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: False
+2025-06-25 20:38:10,807 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 20:38:14,711 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 20:38:37,166 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-25 20:38:39,872 - INFO - 🚀 Autonomous posting initiated for post type: local_community
+2025-06-25 20:38:40,274 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-25 20:38:40,496 - INFO - ✅ Retrieved page access token
+2025-06-25 20:38:47,873 - INFO - ✅ Image uploaded to Facebook: 122138117324697120
+2025-06-25 20:38:48,996 - ERROR - ❌ Facebook posting failed: HTTP 400: {"error":{"message":"Invalid parameter","type":"OAuthException","code":100,"error_subcode":1366051,"is_transient":false,"error_user_title":"Already Posted","error_user_msg":"These photos were already posted.","fbtrace_id":"AH2Y6mhKYrhEUPn05HpZUAe"}}
+2025-06-25 20:38:48,996 - WARNING - 🔄 Detected duplicate image - trying without image
+2025-06-25 20:38:51,212 - INFO - ✅ Posted to Facebook (without image): 548620081658926_122138117366697120
+2025-06-25 20:38:51,212 - INFO - Facebook result: ✅
+2025-06-25 20:38:51,213 - INFO - Instagram posting is disabled
+2025-06-25 20:38:51,311 - INFO - 📊 Posting results logged: True
+2025-06-25 20:41:43,741 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: False
+2025-06-25 20:41:50,764 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 20:41:56,032 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 20:42:22,605 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-25 20:42:24,988 - INFO - 🚀 Autonomous posting initiated for post type: web_design_tip
+2025-06-25 20:42:24,988 - INFO - 📝 Content: Hey Philly business owners!👋 Here at Fishtown Web Design, we know the power of a well-designed websi...
+2025-06-25 20:42:24,989 - INFO - 🖼️ Image: generated_images/web_design_tip_20250625_204222_9947.png
+2025-06-25 20:42:25,268 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-25 20:42:25,560 - INFO - ✅ Retrieved page access token
+2025-06-25 20:42:29,089 - INFO - ✅ Image uploaded to Facebook: 122138117858697120
+2025-06-25 20:42:29,160 - INFO - 📎 Attaching image to post: generated_images/web_design_tip_20250625_204222_9947.png
+2025-06-25 20:42:31,073 - ERROR - ❌ Facebook posting failed: HTTP 400: {"error":{"message":"Invalid parameter","type":"OAuthException","code":100,"error_subcode":1366051,"is_transient":false,"error_user_title":"Already Posted","error_user_msg":"These photos were already posted.","fbtrace_id":"A_TjFL3kWzgtc8Jn85xKXK7"}}
+2025-06-25 20:42:31,074 - WARNING - 🔄 Detected duplicate image - trying without image
+2025-06-25 20:42:35,233 - INFO - ✅ Posted to Facebook (without image): 548620081658926_122138117918697120
+2025-06-25 20:42:35,233 - WARNING - ⚠️ Facebook: Posted without image due to duplicate detection
+2025-06-25 20:42:35,234 - INFO - Instagram posting is disabled
+2025-06-25 20:42:35,234 - INFO - ✅ Posting completed successfully!
+2025-06-25 20:42:35,390 - INFO - 📊 Posting results logged: True
+2025-06-25 20:44:55,331 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: False
+2025-06-25 20:44:59,777 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 20:45:06,439 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 20:45:26,899 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-25 20:45:30,600 - INFO - 🚀 Autonomous posting initiated for post type: web_design_tip
+2025-06-25 20:45:30,600 - INFO - 📝 Content: Hey Philly business owners! 👋 Boost that digital presence with a pro tip from your friends at Fishto...
+2025-06-25 20:45:30,601 - INFO - 🖼️ Image: generated_images/web_design_tip_20250625_204526_1914.png
+2025-06-25 20:45:30,941 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-25 20:45:31,177 - INFO - ✅ Retrieved page access token
+2025-06-25 20:45:34,841 - INFO - ✅ Posted photo with caption to Facebook: 122138118584697120
+2025-06-25 20:45:36,791 - INFO - ✅ Facebook: Posted photo with caption successfully
+2025-06-25 20:45:36,791 - INFO - Instagram posting is disabled
+2025-06-25 20:45:36,791 - INFO - ✅ Posting completed successfully!
+2025-06-25 20:45:37,961 - INFO - 📊 Posting results logged: True
+2025-06-26 22:13:00,460 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: True
+2025-06-26 22:13:07,013 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 22:13:11,150 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-26 22:13:32,128 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-26 22:13:34,220 - INFO - 🚀 Autonomous posting initiated for post type: business_tip
+2025-06-26 22:13:34,220 - INFO - 📝 Content: Hey #PhillyBusinessCommunity! 👋 Your customers are online, are you? 💻 At Fishtown Web Design, we're ...
+2025-06-26 22:13:34,220 - INFO - 🖼️ Image: generated_images/business_tip_20250626_221332_2665.png
+2025-06-26 22:13:34,462 - ERROR - ❌ Page access failed: 400 - {"error":{"message":"Unsupported get request. Object with ID '99808404099288654' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"error_subcode":33,"fbtrace_id":"Aebk4IVwHP6N0Gik-yFbiCC"}}
+2025-06-26 22:13:34,462 - ERROR - ❌ Facebook: Page access failed: 400 - {"error":{"message":"Unsupported get request. Object with ID '99808404099288654' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"error_subcode":33,"fbtrace_id":"Aebk4IVwHP6N0Gik-yFbiCC"}}
+💡 The page ID might be incorrect. Use 'me/accounts' to find your pages.
+2025-06-26 22:13:34,595 - ERROR - ❌ Instagram access failed: 400 - {"error":{"message":"Unsupported get request. Object with ID '1034434662152267' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"error_subcode":33,"fbtrace_id":"ADx-7_3tm1Gnom6c9DPizI9"}}
+2025-06-26 22:13:34,595 - ERROR - ❌ Instagram: Instagram access failed: 400 - {"error":{"message":"Unsupported get request. Object with ID '1034434662152267' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\/\/developers.facebook.com\/docs\/graph-api","type":"GraphMethodException","code":100,"error_subcode":33,"fbtrace_id":"ADx-7_3tm1Gnom6c9DPizI9"}}
+💡 The Instagram business account ID might be incorrect.
+2025-06-26 22:13:34,595 - ERROR - ❌ Posting failed on all platforms
+2025-06-26 22:13:34,666 - INFO - 📊 Posting results logged: False
+2025-06-29 16:25:00,079 - INFO - 🧹 Cleaned up 1 old upload tracking entries
+2025-06-29 16:25:00,083 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: True
+2025-06-29 16:25:07,983 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 16:25:13,769 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 16:25:33,972 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-29 16:25:35,980 - INFO - 🚀 Autonomous posting initiated for post type: behind_the_scenes
+2025-06-29 16:25:35,980 - INFO - 📝 Content: Hey Philly businesses! 👋 Fishtown Web Design is your local partner for all things digital. We've bee...
+2025-06-29 16:25:35,980 - INFO - 🖼️ Image: generated_images/behind_the_scenes_20250629_162533_9465.png
+2025-06-29 16:25:36,413 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-29 16:25:37,659 - INFO - ✅ Retrieved page access token
+2025-06-29 16:25:42,576 - INFO - ✅ Posted photo with caption to Facebook: 122138688692697120
+2025-06-29 16:25:42,635 - INFO - ✅ Facebook: Posted photo with caption successfully
+2025-06-29 16:25:42,635 - INFO - ⏳ Rate limiting: waiting 60.0 seconds
+2025-06-29 16:26:42,974 - INFO - ✅ Instagram access verified: @fishtownwebdesign
+2025-06-29 16:26:43,995 - ERROR - ❌ Instagram media creation failed: 400 - {"error":{"message":"(#10) Requires instagram_content_publish permission to manage the object","type":"OAuthException","code":10,"fbtrace_id":"AlpvQ6GwCmW9xRO-8XBYVjk"}}
+2025-06-29 16:26:43,996 - ERROR - ❌ Instagram: Instagram media creation failed: 400 - {"error":{"message":"(#10) Requires instagram_content_publish permission to manage the object","type":"OAuthException","code":10,"fbtrace_id":"AlpvQ6GwCmW9xRO-8XBYVjk"}}
+2025-06-29 16:26:43,996 - INFO - ✅ Posting completed successfully!
+2025-06-29 16:26:44,055 - INFO - 📊 Posting results logged: True
+2025-06-29 16:28:12,182 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: True
+2025-06-29 16:28:19,422 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 16:28:25,980 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 16:28:43,790 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-29 16:28:46,038 - INFO - 🚀 Autonomous posting initiated for post type: tech_trends
+2025-06-29 16:28:46,038 - INFO - 📝 Content: "Hey Philly Business Owners! 🎩🏙️ Are you looking to scale your online presence in 2022? At Fishtown ...
+2025-06-29 16:28:46,039 - INFO - 🖼️ Image: generated_images/tech_trends_20250629_162843_9274.png
+2025-06-29 16:28:46,416 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-29 16:28:46,862 - INFO - ✅ Retrieved page access token
+2025-06-29 16:28:53,624 - INFO - ✅ Posted photo with caption to Facebook: 122138688986697120
+2025-06-29 16:28:53,691 - INFO - ✅ Facebook: Posted photo with caption successfully
+2025-06-29 16:28:53,692 - INFO - ⏳ Rate limiting: waiting 60.0 seconds
+2025-06-29 16:29:54,026 - INFO - ✅ Instagram access verified: @fishtownwebdesign
+2025-06-29 16:29:55,482 - ERROR - ❌ Instagram media creation failed: 400 - {"error":{"message":"(#100) The parameter image_url is required","type":"OAuthException","code":100,"fbtrace_id":"AyFPbTBdPODJp5deXGe-y9l"}}
+2025-06-29 16:29:55,482 - ERROR - ❌ Instagram: Instagram media creation failed: 400 - {"error":{"message":"(#100) The parameter image_url is required","type":"OAuthException","code":100,"fbtrace_id":"AyFPbTBdPODJp5deXGe-y9l"}}
+2025-06-29 16:29:55,482 - INFO - ✅ Posting completed successfully!
+2025-06-29 16:29:55,550 - INFO - 📊 Posting results logged: True
+2025-06-29 16:32:18,547 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: True
+2025-06-29 16:32:25,771 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 16:32:30,069 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 16:32:48,143 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-29 16:32:50,063 - INFO - 🚀 Autonomous posting initiated for post type: tech_trends
+2025-06-29 16:32:50,063 - INFO - 📝 Content: 👋 Hey Philly business community! Here at Fishtown Web Design, we believe in the power of a strong on...
+2025-06-29 16:32:50,063 - INFO - 🖼️ Image: generated_images/tech_trends_20250629_163248_8546.png
+2025-06-29 16:32:50,388 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-29 16:32:50,744 - INFO - ✅ Retrieved page access token
+2025-06-29 16:32:59,963 - INFO - ✅ Posted photo with caption to Facebook: 122138689184697120
+2025-06-29 16:33:00,020 - INFO - ✅ Facebook: Posted photo with caption successfully
+2025-06-29 16:33:00,021 - INFO - ⏳ Rate limiting: waiting 60.0 seconds
+2025-06-29 16:34:00,363 - INFO - ✅ Instagram access verified: @fishtownwebdesign
+2025-06-29 16:34:00,771 - INFO - ✅ Retrieved page access token
+2025-06-29 16:34:08,431 - ERROR - ❌ No image URL returned from Facebook upload
+2025-06-29 16:34:08,431 - ERROR - ❌ Instagram: No image URL returned from Facebook upload
+2025-06-29 16:34:08,431 - INFO - ✅ Posting completed successfully!
+2025-06-29 16:34:08,508 - INFO - 📊 Posting results logged: True
+2025-06-29 16:35:36,180 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: True
+2025-06-29 16:35:43,919 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 16:35:47,668 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 16:36:07,935 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-29 16:36:09,776 - INFO - 🚀 Autonomous posting initiated for post type: industry_insight
+2025-06-29 16:36:09,776 - INFO - 📝 Content: 🖥️🚀 Philly entrepreneurs, ever wondered why your website isn't driving the traffic you anticipated? ...
+2025-06-29 16:36:09,776 - INFO - 🖼️ Image: generated_images/industry_insight_20250629_163607_5163.png
+2025-06-29 16:36:10,169 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-29 16:36:10,598 - INFO - ✅ Retrieved page access token
+2025-06-29 16:36:15,721 - INFO - ✅ Posted photo with caption to Facebook: 122138689736697120
+2025-06-29 16:36:15,788 - INFO - ✅ Facebook: Posted photo with caption successfully
+2025-06-29 16:36:15,788 - INFO - ⏳ Rate limiting: waiting 60.0 seconds
+2025-06-29 16:37:16,119 - INFO - ✅ Instagram access verified: @fishtownwebdesign
+2025-06-29 16:37:16,735 - INFO - ✅ Retrieved page access token
+2025-06-29 16:37:20,629 - INFO - 🔍 Facebook upload response: {'id': '122138689970697120', 'post_id': '548620081658926_122138689994697120'}
+2025-06-29 16:37:20,983 - INFO - 🔍 Post data: {'images': [{'height': 1024, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfNwCs954SARqNbitRThtgQsP33u8hZj4tnjz4cYcSyBBw&oe=68678601', 'width': 1024}, {'height': 960, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfM7ki7s0In3CDEPpfsvual7ST6nzMVMayix5YyukZK98Q&oe=68678601', 'width': 960}, {'height': 720, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfOnD2pGyudDrQp63eu14lssHj7ZI8pXIcjDqtmB9rpwgw&oe=68678601', 'width': 720}, {'height': 600, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfP7c5SUiLhXAV1cG9gl9nm1TmmB-7kfk-3MGYXODgkTFw&oe=68678601', 'width': 600}, {'height': 480, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfM0CFkZ6f-D8w2Pn1SwgO6bYw64DXpKs6EyZmP88gh-4w&oe=68678601', 'width': 480}, {'height': 320, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_s320x320_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfMURuf2ijKoLaAW5yPUYax7tKIqN7pyYEvNl4tgcReR8g&oe=68678601', 'width': 320}, {'height': 540, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfNo07VJ6p6VUFX06T9m295xlXZseTlcv-45qXmjjLzojA&oe=68678601', 'width': 540}, {'height': 130, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_s130x130_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfNblCRwQR-FDcIjAVlky0mMLzNWQSofVzNkkOcWXdREYg&oe=68678601', 'width': 130}, {'height': 225, 'source': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_p75x225_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfMzbKOMvjQa63nuc6RQouFKU3n9VTpzlH5DoriL-a1r7g&oe=68678601', 'width': 225}], 'picture': 'https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?stp=dst-jpg_s130x130_tt6&_nc_cat=107&ccb=1-7&_nc_sid=041ae2&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfNblCRwQR-FDcIjAVlky0mMLzNWQSofVzNkkOcWXdREYg&oe=68678601', 'id': '122138689970697120'}
+2025-06-29 16:37:20,984 - INFO - ✅ Uploaded image for Instagram: https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/514067847_122138689976697120_927051865425688637_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3wCZLWWdOKAQ7kNvwFIcT1h&_nc_oc=AdlzsDB2n1-YByg2luUJXvOo4ublfk5b2-Ojq1owILn6RPF08vmn6ANkzQuEsbYDpQLo5vZj-z3HsabnLWS3ULoq&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=crZ5XItiQKxBlyuqMmVKTQ&oh=00_AfNwCs954SARqNbitRThtgQsP33u8hZj4tnjz4cYcSyBBw&oe=68678601
+2025-06-29 16:37:27,591 - INFO - ✅ Created Instagram media container: 18104637349535969
+2025-06-29 16:37:30,252 - INFO - ✅ Published Instagram post: 17889606573167454
+2025-06-29 16:37:30,305 - INFO - ✅ Instagram: Posted photo with caption successfully
+2025-06-29 16:37:30,305 - INFO - ✅ Posting completed successfully!
+2025-06-29 16:37:30,360 - INFO - 📊 Posting results logged: True
+2025-06-29 17:55:23,979 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: True
+2025-06-29 17:55:31,143 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 17:55:36,735 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 17:55:59,882 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-29 17:56:02,056 - INFO - 🚀 Autonomous posting initiated for post type: tech_trends
+2025-06-29 17:56:02,056 - INFO - 📝 Content: Hey Philly business owners! 📣 Here at Fishtown Web Design, we believe a strong online presence is yo...
+2025-06-29 17:56:02,057 - INFO - 🖼️ Image: generated_images/tech_trends_20250629_175559_4447.png
+2025-06-29 17:56:02,541 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-29 17:56:02,951 - INFO - ✅ Retrieved page access token
+2025-06-29 17:56:06,844 - INFO - ✅ Posted photo with caption to Facebook: 122138696726697120
+2025-06-29 17:56:06,897 - INFO - ✅ Facebook: Posted photo with caption successfully
+2025-06-29 17:56:06,897 - INFO - ⏳ Rate limiting: waiting 60.0 seconds
+2025-06-29 17:57:07,337 - INFO - ✅ Instagram access verified: @fishtownwebdesign
+2025-06-29 17:57:07,748 - INFO - ✅ Retrieved page access token
+2025-06-29 17:57:12,149 - INFO - 🔍 Facebook upload response: {'id': '122138696960697120', 'post_id': '548620081658926_122138696978697120'}
+2025-06-29 17:57:12,436 - INFO - ✅ Uploaded image for Instagram: https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/513818042_122138696966697120_7318110414681229793_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=-yklcTaa4BoQ7kNvwF0UAf1&_nc_oc=AdnMtrOMg4XXWfgnMX1-km49yM5iJmopBSbcxDtDq1JYDEXknhNTreQG_GcYPDzHcz7CtPFg3C24BqP-3M5fvj-m&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=ss7_t9DUntc2pvqttnIQ-w&oh=00_AfMWA2bg2em0ULXe3w0Ds3EDz6CkPqgQC-OjQ_VN4FH9VA&oe=6867701A
+2025-06-29 17:57:18,394 - INFO - ✅ Created Instagram media container: 17994490991653295
+2025-06-29 17:57:21,265 - INFO - ✅ Published Instagram post: 18089910073564992
+2025-06-29 17:57:21,320 - INFO - ✅ Instagram: Posted photo with caption successfully
+2025-06-29 17:57:21,320 - INFO - ✅ Posting completed successfully!
+2025-06-29 17:57:21,386 - INFO - 📊 Posting results logged: True
+2025-06-29 18:03:12,103 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: True
+2025-06-29 18:03:20,691 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 18:03:23,690 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-29 18:03:42,596 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-06-29 18:03:44,432 - INFO - 🚀 Autonomous posting initiated for post type: business_tip
+2025-06-29 18:03:44,432 - INFO - 📝 Content: 👋 Hey Philly business owners! 💼 At Fishtown Web Design, we believe a strong online presence is 🔑 to ...
+2025-06-29 18:03:44,432 - INFO - 🖼️ Image: generated_images/business_tip_20250629_180342_9517.png
+2025-06-29 18:03:45,463 - INFO - ✅ Page access verified: Fishtown Web Design
+2025-06-29 18:03:45,670 - INFO - ✅ Retrieved page access token
+2025-06-29 18:03:49,152 - INFO - ✅ Posted photo with caption to Facebook: 122138697494697120
+2025-06-29 18:03:49,216 - INFO - ✅ Facebook: Posted photo with caption successfully
+2025-06-29 18:03:49,216 - INFO - ⏳ Rate limiting: waiting 60.0 seconds
+2025-06-29 18:04:49,552 - INFO - ✅ Instagram access verified: @fishtownwebdesign
+2025-06-29 18:04:49,960 - INFO - ✅ Retrieved page access token
+2025-06-29 18:04:50,223 - INFO - 📤 Uploading image to Facebook to get URL for Instagram
+2025-06-29 18:04:50,576 - INFO - ✅ Retrieved page access token
+2025-06-29 18:04:52,423 - INFO - 🔍 Facebook upload response: {'id': '122138697818697120'}
+2025-06-29 18:04:52,832 - INFO - ✅ Uploaded image for Instagram: https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/513631066_122138697824697120_2528047546298896436_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=054031&_nc_ohc=pNLBqJcHYJIQ7kNvwG8nrcQ&_nc_oc=Adl1_kB4q3i1w10bKs7540vwEAvjYBDbPBWalb3fBMqYiU87Wr7_XueXamb3czUyUshkhngKJAAR7f8HJHSyougk&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=w9NlGtu4repR8C3jrfEIVA&oh=00_AfMwqn6Qj4ULcTRbJqM-bmUdnBgteC4pwtF8kKu4yV8dgQ&oe=68677C05
+2025-06-29 18:04:58,565 - INFO - ✅ Created Instagram media container: 18080573533678064
+2025-06-29 18:05:02,251 - INFO - ✅ Published Instagram post: 17996250602802929
+2025-06-29 18:05:02,314 - INFO - ✅ Instagram: Posted photo with caption successfully
+2025-06-29 18:05:02,315 - INFO - ✅ Posting completed successfully!
+2025-06-29 18:05:02,374 - INFO - 📊 Posting results logged: True
+2025-07-03 22:20:55,165 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-03 22:20:58,650 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-03 22:21:15,564 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-03 22:21:18,045 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-03 22:22:31,824 - INFO - ✅ Social media poster initialized - Facebook: True, Instagram: True
+2025-07-03 22:28:22,682 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-03 22:28:28,321 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-03 22:28:31,599 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-03 22:28:57,041 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-03 22:28:59,205 - INFO - Autonomous posting initiated for post type: behind_the_scenes
+2025-07-03 22:28:59,205 - INFO - Content: 🔔Hey Philly Business Community!🔔 At Fishtown Web Design, we're not just tech nerds, we're your neigh...
+2025-07-03 22:28:59,206 - INFO - Image: generated_images/behind_the_scenes_20250703_222857_1448.png
+2025-07-03 22:29:00,831 - INFO - Page access verified: Fishtown Web Design
+2025-07-03 22:29:01,016 - INFO - Retrieved page access token
+2025-07-03 22:29:06,983 - INFO - Posted photo with caption to Facebook: 122139164558697120
+2025-07-03 22:29:06,988 - INFO - Facebook: Posted photo with caption successfully
+2025-07-03 22:29:06,989 - INFO - Rate limiting: waiting 60.0 seconds
+2025-07-03 22:30:07,235 - INFO - Instagram access verified: @fishtownwebdesign
+2025-07-03 22:30:08,253 - INFO - Retrieved page access token
+2025-07-03 22:30:09,196 - INFO - Uploading image to Facebook to get URL for Instagram
+2025-07-03 22:30:09,387 - INFO - Retrieved page access token
+2025-07-03 22:30:12,020 - INFO - Facebook upload response: {'id': '122139164780697120'}
+2025-07-03 22:30:13,005 - INFO - Uploaded image for Instagram: https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/515437737_122139164786697120_2615347527706270234_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=054031&_nc_ohc=behpYcdrP90Q7kNvwEtZq16&_nc_oc=AdkCADuF1HM5ju0Kq63qL0d9SgmwPYBt7S67NOpZvGoasjFLWJDsKGRHSAw1SlBM1QY&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&edm=AMAeTUEEAAAA&_nc_gid=ktVmK02XqLAlj6X1WiDTeA&oh=00_AfOL3ezCzNfhXX-C7rDNcw6sfeStQAhpnJy_tsfZSp3qrA&oe=686CF65C
+2025-07-03 22:30:19,653 - INFO - Created Instagram media container: 18104958268533398
+2025-07-03 22:30:25,243 - INFO - Published Instagram post: 18138648550412801
+2025-07-03 22:30:25,254 - INFO - Instagram: Posted photo with caption successfully
+2025-07-03 22:30:25,255 - INFO - Posting completed successfully!
+2025-07-03 22:30:25,260 - INFO - 📊 Posting results logged: True
+2025-07-04 11:22:46,254 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 11:22:51,413 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:22:56,375 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:23:14,846 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-04 11:23:17,175 - INFO - Autonomous posting initiated for post type: holiday
+2025-07-04 11:23:17,176 - INFO - Content: 🎆🇺🇸Happy Independence Day, Philly!🇺🇸🎆 Today, we celebrate freedom - the freedom to dream, to create,...
+2025-07-04 11:23:17,176 - INFO - Image: generated_images/holiday_20250704_112314_7431.png
+2025-07-04 11:23:18,514 - INFO - Page access verified: Fishtown Web Design
+2025-07-04 11:23:18,786 - INFO - Retrieved page access token
+2025-07-04 11:23:23,067 - INFO - Posted photo with caption to Facebook: 122139224126697120
+2025-07-04 11:23:23,074 - INFO - Facebook: Posted photo with caption successfully
+2025-07-04 11:23:23,074 - INFO - Rate limiting: waiting 60.0 seconds
+2025-07-04 11:24:23,406 - INFO - Instagram access verified: @fishtownwebdesign
+2025-07-04 11:24:23,646 - INFO - Retrieved page access token
+2025-07-04 11:24:24,750 - INFO - Facebook post data: {'images': [{'height': 1024, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfN4t7CyG7lefx0mkt6opuSfnSiM0CMPHHFyRGwZyywnTQ&oe=686DD770', 'width': 1024}, {'height': 960, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfPrRDWz960yN1oeOP-xxE2tzMHhA0ANuq9XpeyoQSJZiw&oe=686DD770', 'width': 960}, {'height': 720, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfPNzbYuZ6b6B__43NOMHIzEWlIg2HpJ-iM81rm5uxIGwg&oe=686DD770', 'width': 720}, {'height': 600, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfPXkm1j6wnuy7nftPB6a6Jx4hqOEqewIkx5uODd6cOMEA&oe=686DD770', 'width': 600}, {'height': 480, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfNTQM6iQYUyBto7kPJG9hSFOctwLMAmDQH1wZp9TN4L4Q&oe=686DD770', 'width': 480}, {'height': 320, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_s320x320_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfPfJDAc6EU6KlPhvzlT6kwBYr_apZVkConhIIM0Kj6l3g&oe=686DD770', 'width': 320}, {'height': 540, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfNmln3qDNGxk6aSfM5qINddhmxYYELSq1WSSha8ZJDsTQ&oe=686DD770', 'width': 540}, {'height': 130, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_s130x130_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfN-uNfJVj4OPRtMOHRThFjPXNHYPHyz8o2hond6q6rFkg&oe=686DD770', 'width': 130}, {'height': 225, 'source': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_p75x225_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfMVd0OYpDuxZap1IpJxOwgKa_e3zl9y0IsgbC7HpzAy-Q&oe=686DD770', 'width': 225}], 'picture': 'https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?stp=dst-jpg_s130x130_tt6&_nc_cat=111&ccb=1-7&_nc_sid=041ae2&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfN-uNfJVj4OPRtMOHRThFjPXNHYPHyz8o2hond6q6rFkg&oe=686DD770', 'id': '122139224126697120'}
+2025-07-04 11:24:24,755 - INFO - Retrieved image URL from Facebook post: https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/515533057_122139224132697120_8893058897384989612_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=aGwxBXvgYLMQ7kNvwHEQoj2&_nc_oc=AdltD9hekEbowRK7R2xgAC-FFNYuY_fubhZGA7IKs5uVU-rjimCZ-3bWqc-AYbueDiA&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=nea2oB8SCqCBMRT8Ios18w&oh=00_AfN4t7CyG7lefx0mkt6opuSfnSiM0CMPHHFyRGwZyywnTQ&oe=686DD770
+2025-07-04 11:24:31,438 - INFO - Created Instagram media container: 17884222911204857
+2025-07-04 11:24:35,095 - INFO - Published Instagram post: 18035584139393272
+2025-07-04 11:24:35,106 - INFO - Instagram: Posted photo with caption successfully
+2025-07-04 11:24:35,107 - INFO - Posting completed successfully!
+2025-07-04 11:24:35,116 - INFO - Posting results logged: True
+2025-07-04 11:45:58,919 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 11:46:12,059 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 11:46:17,538 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:46:21,036 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:46:46,030 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 11:46:52,934 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:46:56,841 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:47:15,513 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-04 11:48:01,863 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 11:48:10,263 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:48:13,869 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:48:32,541 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-04 11:48:54,033 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 11:48:59,040 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:49:04,196 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:49:21,976 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-04 11:59:00,873 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 11:59:06,862 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:59:10,018 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 11:59:28,507 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-04 12:11:49,236 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 12:12:28,093 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 12:12:32,107 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 12:12:35,885 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 12:13:36,731 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 12:13:41,321 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 12:13:44,960 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:40:35,069 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 13:40:41,873 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:40:47,480 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:40:47,845 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 400 Bad Request"
+2025-07-04 13:40:47,850 - INFO - Autonomous posting initiated for post type: holiday
+2025-07-04 13:40:47,850 - INFO - Content: Happy 4th of July, Philadelphia! 🎆🇺🇸 As we celebrate our nation's independence, let's also celebrate...
+2025-07-04 13:40:48,871 - INFO - Page access verified: Fishtown Web Design
+2025-07-04 13:40:49,158 - INFO - Retrieved page access token
+2025-07-04 13:40:51,214 - INFO - Posted text-only status to Facebook: 548620081658926_122139235286697120
+2025-07-04 13:40:51,214 - INFO - Facebook: Posted text-only status successfully
+2025-07-04 13:40:51,214 - INFO - Rate limiting: waiting 60.0 seconds
+2025-07-04 13:42:07,652 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 13:42:16,586 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:42:21,821 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:42:21,984 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 400 Bad Request"
+2025-07-04 13:43:00,393 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 13:43:07,937 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:43:11,461 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:43:32,244 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-04 13:44:27,551 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 13:44:32,549 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:44:36,229 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:44:36,383 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 400 Bad Request"
+2025-07-04 13:44:58,269 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 13:45:04,579 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:45:07,504 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:45:07,800 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 400 Bad Request"
+2025-07-04 13:47:14,334 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 13:47:20,466 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:47:23,827 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:47:42,129 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-04 13:48:24,114 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 13:48:30,608 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:48:34,088 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:49:00,505 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
+2025-07-04 13:53:25,290 - INFO - Social media poster initialized - Facebook: True, Instagram: True
+2025-07-04 13:53:32,191 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:53:35,889 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-04 13:54:01,497 - INFO - HTTP Request: POST https://api.openai.com/v1/images/generations "HTTP/1.1 200 OK"
